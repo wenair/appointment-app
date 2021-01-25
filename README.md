@@ -47,7 +47,7 @@ Appointment updated
 ### Structure  
 gateway.py contains the actual flask logic. sql.py deals with all the sqllite related logic. gateway.test.py has the tests.
 
-###  Things I wish I could have done or I could have done better:  
+###  Things I wish I could have done better or what more I could have looked into:  
 1. There should be a middle layer between gateway and sql. gateway should only accept requests. Other logic should move into a separate layer between gateway and sql.  
 
 1. I did not quite figure out usage of app context in the tests. So I am doing the not so nice bit of opening and closing database connections each time. This was done just to make the tests pass.
