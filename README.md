@@ -40,6 +40,10 @@ Now repeat the appointment
 > curl -X POST -H 'Content-Type: application/json' -d '{"datetime":"2020-01-01 14:00"}' http://localhost:5000/appointments/Tom  
 ERROR: Appointment already exists for date. Please delete that appointment before continuing.  
 
+Try a different day
+>curl -X POST -H 'Content-Type: application/json' -d '{"datetime":"2020-01-03 14:00"}' http://localhost:5000/appointments/Tom  
+Appointment updated 
+
 ### Structure  
 gateway.py contains the actual flask logic. sql.py deals with all the sqllite related logic. gateway.test.py has the tests.
 
